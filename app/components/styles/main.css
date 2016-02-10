@@ -1,0 +1,26 @@
+body{ color: #CC0033; background: #339900; }
+span{ display: block; }
+
+.outline{
+    width: 110px;
+    border: 0 solid black;
+    text-align: center;
+    padding: 10px;
+    margin: 10px;
+    background: #FFF;
+    display: inline-block;
+}
+.top{ text-align: left; }
+.bottom{ text-align: right; }
+
+.shadow{ box-shadow: 1px 1px 3px #000; -moz-box-shadow: 1px 1px 3px #000; -webkit-box-shadow: 1px 1px 3px #000; }
+.rounded{ border-radius:10px; -moz-border-radius:10px; -webkit-border-radius:10px; }
+.card-container {
+    display: inline-block;
+}
+.darken {
+    background: lightslategray;
+}
+div.black-suit {
+    color: black;
+}

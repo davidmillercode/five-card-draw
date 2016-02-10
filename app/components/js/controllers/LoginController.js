@@ -5,15 +5,15 @@
 
 'use strict';
 
-angular.module('mostPopularListingsApp.login', ['ngRoute'])
+angular.module('myApp.login', [])
 
 // Routing configuration for this module
-.config(['$routeProvider',function($routeprovider){
-	$routeprovider.when('/login', {
-		controller: 'LoginController',
-		templateUrl: 'components/views/loginView.html'
-	});
-}])
+//.config(['$routeProvider',function($routeprovider){
+//	$routeprovider.when('/login', {
+//		controller: 'LoginController',
+//		templateUrl: '../../views/loginView.html'
+//	});
+//}])
 
 // Controller definition for this module
 .controller('LoginController', function($scope,$http,$timeout) {

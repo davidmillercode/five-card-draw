@@ -1,4 +1,28 @@
 <div class="center">
+	{{}}
 	<div>AngularJS starter application</div>
 	<div>This is Home View</div>
+
+	<div ng-repeat="card in player1.cards" class="card-container">
+		<card card="card" player="player1" i="$index"></card>
+	</div>
+	<button ng-click="player1.getCards()">Swap Cards</button>
+
+	<!--<div class="outline shadow rounded" ng-repeat="card in player1.cards">-->
+		<!--<div class="top"><span>{{card.getCardName()}}</span><span>{{card.getSuitName()}}</span></div>-->
+
+		<!--<h1 ng-bind-html="card.getSuitName()"></h1>-->
+
+		<!--<div class="bottom"><span>{{card.getSuitName()}}</span><span>{{card.getCardName()}}</span></div>-->
+	<!--</div>-->
+
+
+	<!--<div ng-repeat="card in player1.cards"> &lt;!&ndash; p cards &ndash;&gt;-->
+		<!--{{card.getCardName()}}-->
+	<!--</div>-->
+
+	<!--<div ng-repeat="card in dealer.cards"> &lt;!&ndash; d cards &ndash;&gt;-->
+		<!--{{card.getCardName()}}-->
+	<!--</div>-->
+
 </div>
