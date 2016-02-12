@@ -11,5 +11,6 @@ angular.module('myApp.home', ['ngSanitize'])
 		$scope.player1 = new Player(deck);
 		$scope.dealer = new Dealer(deck);
 		$scope.player1.startGame();
+		$scope.dealer.startGame();
 	}
 }]);

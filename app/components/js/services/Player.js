@@ -7,19 +7,26 @@ angular.module('myApp.services.Player', [])
             var canDiscard = true;
             var turn = 0; // when 0, player goes first to remove cards
 
-            this.getRound = function() {
-                return round;
+            //this.getRound = function() {
+            //    return round;
+            //};
+            //this.getTurn = function() {
+            //  return turn;
+            //};
+            this.canDiscard = function() {
+                return deck.round === 1 && deck.whoseTurn === 0;
             };
 
             this.getCards = function() {
                 canDiscard = false; // no more selecting && discarding cards
-                updateRound();
+                deck.changeTurn();
                 var cardsDealt = deck.dealCards(toRemove.length);
                 var that = this;
                 toRemove.forEach(function(i){
                     that.cards[i] = cardsDealt.pop();
                 });
                 toRemove = [];
+
             };
 
             this.selectCardToRemove = function(i){

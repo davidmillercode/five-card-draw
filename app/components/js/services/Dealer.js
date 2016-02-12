@@ -2,11 +2,8 @@ angular.module('myApp.services.Dealer', [])
     .service('Dealer', function(Player) {
         return function(deck){
             // create our new custom object that reuse the original object constructor
-            var Dealer = function() {
-                Player.apply(this, arguments);
-            };
-
-            Dealer.prototype = new Player(deck);
+            Player.apply(this, arguments);
+            this.prototype = new Player(deck);
 
             var cards;
             var toRemove; //this will just be the indexes of cards selected to replace
@@ -14,8 +11,9 @@ angular.module('myApp.services.Dealer', [])
             var score = 0; // only goes up with a win
             var canDiscard = true;
             var turn = 0; // says who has to act first, player if 0, dealer if 1
+            this.dealer = true;
 
-            Dealer.prototype.startGame = function() {
+            this.prototype.startGame = function() {
                 toRemove = [];
                 cards = deck.dealCards(5);
                 canDiscard = true;
@@ -27,14 +25,12 @@ angular.module('myApp.services.Dealer', [])
                 } // otherwise wait for player's move
             };
 
-            Dealer.drawCards = function(){
+            this.drawCards = function(){
 
             };
 
-            Dealer.makeMove = function(){
+            this.makeMove = function(){
 
             };
-
-            return Dealer;
         }
     });

@@ -1,12 +1,16 @@
 <div class="center">
 	{{}}
-	<div>AngularJS starter application</div>
-	<div>This is Home View</div>
+	<div>Five Card Draw - Computer Play and Score Calculation to Come Later</div>
 
 	<div ng-repeat="card in player1.cards" class="card-container">
 		<card card="card" player="player1" i="$index"></card>
 	</div>
-	<button ng-click="player1.getCards()">Swap Cards</button>
+	<button ng-click="player1.getCards()" ng-hide="player1.canDiscard()">Swap Cards</button>
+	<!--Dealer-->
+	<div ng-repeat="card in dealer.cards" class="card-container">
+		<card card="card" player="dealer" i="$index"></card>
+	</div>
+
 
 	<!--<div class="outline shadow rounded" ng-repeat="card in player1.cards">-->
 		<!--<div class="top"><span>{{card.getCardName()}}</span><span>{{card.getSuitName()}}</span></div>-->

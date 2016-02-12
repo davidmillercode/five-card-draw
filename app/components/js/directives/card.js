@@ -18,17 +18,20 @@ angular.module('myApp.directives.card', ['ngSanitize'])
             if (scope.card.getSuitValue() % 3 === 0) {
                 ele.addClass('black-suit');
             }
-            ele.bind('click', function(){
-                if (ele.hasClass('darken')) {
-                    ele.removeClass('darken');
-                    scope.player.selectCardToRemove(scope.i);
-                } else {
-                    ele.addClass('darken');
-                    console.log(scope.i);
-                    scope.player.selectCardToRemove(scope.i);
-                    console.log('player.cards: ', scope.player.cards);
-                }
-            });
+            // player can only discard their own cards
+            if (! scope.player.dealer) {
+                ele.bind('click', function(){
+                    // darkens card to discard if unselected / removes darken if selected
+                    // also adds or removes from pending discard pile
+                    if (ele.hasClass('darken')) {
+                        ele.removeClass('darken');
+                        scope.player.selectCardToRemove(scope.i);
+                    } else {
+                        ele.addClass('darken');
+                        scope.player.selectCardToRemove(scope.i);
+                    }
+                });
+            }
         }
     };
     });

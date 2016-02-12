@@ -1,10 +1,9 @@
 {
-  "name": "angular-starter",
+  "name": "five-card-draw",
   "private": true,
   "version": "0.0.1",
-  "description": "Angular.js starter application",
-  "repository": "https://github.com/popularowl/angular-starter",
-  "license": "MIT",
+  "description": "Five-card-draw app",
+  "repository": "https://github.com/davidmillercode/five-c-draw.git",
   "devDependencies": {
     "karma": "~0.10",
     "karma-junit-reporter":"latest",

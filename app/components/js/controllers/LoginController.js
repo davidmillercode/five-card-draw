@@ -7,25 +7,12 @@
 
 angular.module('myApp.login', [])
 
-// Routing configuration for this module
-//.config(['$routeProvider',function($routeprovider){
-//	$routeprovider.when('/login', {
-//		controller: 'LoginController',
-//		templateUrl: '../../views/loginView.html'
-//	});
-//}])
-
 // Controller definition for this module
 .controller('LoginController', function($scope,$http,$timeout) {
 
-		// Global variables for this controller
 		var responseStatus = '';
 		var userIp = 'not yet retrieved';
 
-		// Just a housekeeping.
-		// In the init method we are declaring all the
-		// neccesarry settings and assignments to be run once
-		// controller is invoked
 		init();
 
 		function init(){};

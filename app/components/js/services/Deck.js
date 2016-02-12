@@ -1,12 +1,14 @@
 angular.module('myApp.services.Deck', [])
     .service('Deck', function(Card){
         return function(){
-            var whoseTurn = 0; // keeps track of who has to go first => 0:Player, 1:Dealer
+            this.whoseTurn = 0; // keeps track of who has to go first => 0:Player, 1:Dealer
+            this.round = 0;
             this.dealCards = function(numberOfCards){
                 var cardsToDeal = [];
                 for (var i = 0; i < numberOfCards; i++) {
                     cardsToDeal.push(deck.pop());
                 }
+                //hhh
                 return cardsToDeal;
             };
 
@@ -40,12 +42,12 @@ angular.module('myApp.services.Deck', [])
                 console.log('this is deck: ', array);
                 return array;
             };
-
+            var that = this;
             this.changeTurn = function() {
-                whoseTurn = (whoseTurn === 0) ? 1 : 0;
+                that.whoseTurn = (that.whoseTurn === 0) ? 1 : 0;
             };
-            this.getTurn = function(){
-                return whoseTurn;
+            this.changeRound = function(){
+              that.round = (that.round === 2) ? 0 : that.round + 1; // add one unless in last round
             };
 
             var deck = this.shuffle();
