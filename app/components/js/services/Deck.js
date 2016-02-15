@@ -1,5 +1,12 @@
-angular.module('myApp.services.Deck', [])
-    .service('Deck', function(Card){
+(function(){
+    'use strict';
+
+    angular
+        .module('myApp')
+        .service('Deck', Deck);
+
+
+    function Deck(Card) {
         return function(){
             this.whoseTurn = 0; // keeps track of who has to go first => 0:Player, 1:Dealer
             this.round = 0;
@@ -47,9 +54,10 @@ angular.module('myApp.services.Deck', [])
                 that.whoseTurn = (that.whoseTurn === 0) ? 1 : 0;
             };
             this.changeRound = function(){
-              that.round = (that.round === 2) ? 0 : that.round + 1; // add one unless in last round
+                that.round = (that.round === 2) ? 0 : that.round + 1; // add one unless in last round
             };
 
             var deck = this.shuffle();
         }
-    });
+    }
+})();

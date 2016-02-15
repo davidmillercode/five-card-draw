@@ -1,13 +1,13 @@
-angular.module('myApp.config', ['ui.router'])
-    .config(function($stateProvider, $urlRouterProvider, $locationProvider, $logProvider) {
+(function(){
+    'use strict';
+
+    angular
+        .module('myApp')
+        .config(config);
+
+
+    function config($stateProvider, $urlRouterProvider, $logProvider) {
         $logProvider.debugEnabled(true);
-        // remove pound sign for browsers that have html5
-        //$locationProvider.html5Mode({
-        //    enabled: true,
-        //    requireBase: false
-        //});
-        //
-        // For any unmatched url, redirect to /state1
         $urlRouterProvider.otherwise('/home/');
 
         // Now set up the states
@@ -19,10 +19,12 @@ angular.module('myApp.config', ['ui.router'])
             })
             .state('rules', {
                 url: "/rules/",
-                templateUrl: "components/views/aboutView.html"
+                templateUrl: "components/views/aboutView.html",
+                controller: 'AboutController'
             })
             .state('login', {
                 url: "/login/",
                 templateUrl: "components/views/loginView.html"
             });
-});
+    }
+})();

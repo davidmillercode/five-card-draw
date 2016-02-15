@@ -1,5 +1,12 @@
-angular.module('myApp.services.Player', [])
-    .service('Player', function() {
+(function(){
+    'use strict';
+
+    angular
+        .module('myApp')
+        .service('Player', Player);
+
+
+    function Player() {
         return function(deck){
             var toRemove; //this will just be the indexes of cards selected to replace
             var round = 0; // 0 is before getting dealt; 1 is after dealt; 2 is after discarded
@@ -56,4 +63,5 @@ angular.module('myApp.services.Player', [])
                 changeTurn();
             }
         }
-    });
+    }
+})();

@@ -1,11 +1,18 @@
-angular.module('myApp.services.Card', [])
-    .service('Card', function($interpolate){
+(function(){
+    'use strict';
+
+    angular
+        .module('myApp')
+        .service('Card', Card);
+
+
+    function Card() {
         return function(suit, card){
             var s = suit; //0: clubs, 1: diamonds, 2: hearts, 3:spades
             var c = card; // add 2 to get card, 9: jack, 10: queen, 11: king, 12: Ace
 
             this.getCardValue = function(){
-                return [c,s];
+                return c;
             };
 
             this.getSuitValue = function(){
@@ -41,4 +48,5 @@ angular.module('myApp.services.Card', [])
                 }
             }
         }
-    });
+    }
+})();

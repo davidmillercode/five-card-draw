@@ -1,5 +1,12 @@
-angular.module('myApp.services.Dealer', [])
-    .service('Dealer', function(Player) {
+(function(){
+    'use strict';
+
+    angular
+        .module('myApp')
+        .service('Dealer', Dealer);
+
+
+    function Dealer(Player) {
         return function(deck){
             // create our new custom object that reuse the original object constructor
             Player.apply(this, arguments);
@@ -33,4 +40,5 @@ angular.module('myApp.services.Dealer', [])
 
             };
         }
-    });
+    }
+})();

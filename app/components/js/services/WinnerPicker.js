@@ -1,5 +1,12 @@
-angular.module('myApp.services.WinnerPicker', [])
-    .service('WinnerPicker', function() {
+(function(){
+    'use strict';
+
+    angular
+        .module('myApp')
+        .service('WinnerPicker', WinnerPicker);
+
+
+    function WinnerPicker() {
         return function(){
             this.cards = [];
             this.getCards = function(numCards, indexes) {
@@ -7,4 +14,5 @@ angular.module('myApp.services.WinnerPicker', [])
             };
             this.wtf = 'winner what???';
         }
-    });
+    }
+})();

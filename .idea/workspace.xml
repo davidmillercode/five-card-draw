@@ -2,40 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="578ab7bb-4b5b-4e6c-9fda-2ff38e910d00" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$USER_HOME$/WebstormProjects/five-card-draw/app/components/js/services/Card.js" />
-      <change type="NEW" beforePath="" afterPath="$USER_HOME$/WebstormProjects/five-card-draw/app/components/js/services/Dealer.js" />
-      <change type="NEW" beforePath="" afterPath="$USER_HOME$/WebstormProjects/five-card-draw/app/components/js/services/Deck.js" />
-      <change type="NEW" beforePath="" afterPath="$USER_HOME$/WebstormProjects/five-card-draw/app/components/js/services/Player.js" />
-      <change type="NEW" beforePath="" afterPath="$USER_HOME$/WebstormProjects/five-card-draw/app/components/js/services/WinnerPicker.js" />
-      <change type="NEW" beforePath="" afterPath="$USER_HOME$/WebstormProjects/five-card-draw/app/components/js/directives/card.js" />
-      <change type="NEW" beforePath="" afterPath="$USER_HOME$/WebstormProjects/five-card-draw/app/components/views/cardsView.html" />
-      <change type="NEW" beforePath="" afterPath="$USER_HOME$/WebstormProjects/five-card-draw/app/components/js/config.js" />
-      <change type="NEW" beforePath="" afterPath="$USER_HOME$/WebstormProjects/five-card-draw/app/components/styles/main.css" />
-      <change type="DELETED" beforePath="$USER_HOME$/WebstormProjects/angular-starter/app/resources/bower/angular-route/.bower.json" afterPath="" />
-      <change type="DELETED" beforePath="$USER_HOME$/WebstormProjects/angular-starter/app/resources/bower/angular-route/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$USER_HOME$/WebstormProjects/angular-starter/app/resources/bower/angular-route/angular-route.js" afterPath="" />
-      <change type="DELETED" beforePath="$USER_HOME$/WebstormProjects/angular-starter/app/resources/bower/angular-route/angular-route.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$USER_HOME$/WebstormProjects/angular-starter/app/resources/bower/angular-route/angular-route.min.js.map" afterPath="" />
-      <change type="DELETED" beforePath="$USER_HOME$/WebstormProjects/angular-starter/app/resources/bower/angular-route/bower.json" afterPath="" />
-      <change type="DELETED" beforePath="$USER_HOME$/WebstormProjects/angular-starter/app/resources/bower/angular-route/package.json" afterPath="" />
-      <change type="MOVED" beforePath="$USER_HOME$/WebstormProjects/angular-starter/app/components/controllers/AboutController.js" afterPath="$USER_HOME$/WebstormProjects/five-card-draw/app/components/js/controllers/AboutController.js" />
-      <change type="MOVED" beforePath="$USER_HOME$/WebstormProjects/angular-starter/app/components/controllers/HomeController.js" afterPath="$USER_HOME$/WebstormProjects/five-card-draw/app/components/js/controllers/HomeController.js" />
-      <change type="MOVED" beforePath="$USER_HOME$/WebstormProjects/angular-starter/app/components/controllers/LoginController.js" afterPath="$USER_HOME$/WebstormProjects/five-card-draw/app/components/js/controllers/LoginController.js" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/WebstormProjects/five-card-draw/app/resources/bower/angular/angular.min.js.gzip" afterPath="$USER_HOME$/WebstormProjects/five-card-draw/app/resources/bower/angular/angular.min.js.gzip" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/WebstormProjects/five-card-draw/app/resources/bower/angular/.bower.json" afterPath="$USER_HOME$/WebstormProjects/five-card-draw/app/resources/bower/angular/.bower.json" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/WebstormProjects/five-card-draw/app/resources/bower/angular/README.md" afterPath="$USER_HOME$/WebstormProjects/five-card-draw/app/resources/bower/angular/README.md" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/WebstormProjects/five-card-draw/app/resources/bower/angular/angular-csp.css" afterPath="$USER_HOME$/WebstormProjects/five-card-draw/app/resources/bower/angular/angular-csp.css" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/WebstormProjects/five-card-draw/app/resources/bower/angular/angular.js" afterPath="$USER_HOME$/WebstormProjects/five-card-draw/app/resources/bower/angular/angular.js" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/WebstormProjects/five-card-draw/app/resources/bower/angular/angular.min.js.map" afterPath="$USER_HOME$/WebstormProjects/five-card-draw/app/resources/bower/angular/angular.min.js.map" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/WebstormProjects/five-card-draw/app/resources/bower/angular/angular.min.js" afterPath="$USER_HOME$/WebstormProjects/five-card-draw/app/resources/bower/angular/angular.min.js" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/WebstormProjects/five-card-draw/app/resources/css/app.css" afterPath="$USER_HOME$/WebstormProjects/five-card-draw/app/resources/css/app.css" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/WebstormProjects/five-card-draw/app/app.js" afterPath="$USER_HOME$/WebstormProjects/five-card-draw/app/app.js" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/WebstormProjects/five-card-draw/bower.json" afterPath="$USER_HOME$/WebstormProjects/five-card-draw/bower.json" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/WebstormProjects/five-card-draw/app/resources/bower/angular/bower.json" afterPath="$USER_HOME$/WebstormProjects/five-card-draw/app/resources/bower/angular/bower.json" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/WebstormProjects/five-card-draw/app/components/views/homeView.html" afterPath="$USER_HOME$/WebstormProjects/five-card-draw/app/components/views/homeView.html" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/WebstormProjects/five-card-draw/app/index.html" afterPath="$USER_HOME$/WebstormProjects/five-card-draw/app/index.html" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/WebstormProjects/five-card-draw/karma.conf.js" afterPath="$USER_HOME$/WebstormProjects/five-card-draw/karma.conf.js" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/WebstormProjects/five-card-draw/app/resources/bower/angular/package.json" afterPath="$USER_HOME$/WebstormProjects/five-card-draw/app/resources/bower/angular/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/components/js/services/HandAnalyzer.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/components/js/controllers/AboutController.js" afterPath="$PROJECT_DIR$/app/components/js/controllers/AboutController.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/components/js/services/Card.js" afterPath="$PROJECT_DIR$/app/components/js/services/Card.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/components/js/services/Dealer.js" afterPath="$PROJECT_DIR$/app/components/js/services/Dealer.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/components/js/services/Deck.js" afterPath="$PROJECT_DIR$/app/components/js/services/Deck.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/components/js/controllers/HomeController.js" afterPath="$PROJECT_DIR$/app/components/js/controllers/HomeController.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/components/js/controllers/LoginController.js" afterPath="$PROJECT_DIR$/app/components/js/controllers/LoginController.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/components/js/services/Player.js" afterPath="$PROJECT_DIR$/app/components/js/services/Player.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/components/js/services/WinnerPicker.js" afterPath="$PROJECT_DIR$/app/components/js/services/WinnerPicker.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/app.js" afterPath="$PROJECT_DIR$/app/app.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/components/js/directives/card.js" afterPath="$PROJECT_DIR$/app/components/js/directives/card.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/components/js/config.js" afterPath="$PROJECT_DIR$/app/components/js/config.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/five-card-draw.iml" afterPath="$PROJECT_DIR$/.idea/five-card-draw.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="angular-starter.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -57,100 +37,100 @@
   <component name="FileEditorManager">
     <leaf>
       <file leaf-file-name="AboutController.js" pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/WebstormProjects/five-card-draw/app/components/js/controllers/AboutController.js">
+        <entry file="file://$PROJECT_DIR$/app/components/js/controllers/AboutController.js">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="17" column="6" selection-start-line="17" selection-start-column="6" selection-end-line="17" selection-end-column="6" />
+              <caret line="11" column="5" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="LoginController.js" pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/WebstormProjects/five-card-draw/app/components/js/controllers/LoginController.js">
+        <entry file="file://$PROJECT_DIR$/app/components/js/controllers/LoginController.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-0.0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="app.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/app.js">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="48" column="10" selection-start-line="48" selection-start-column="10" selection-end-line="48" selection-end-column="10" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="loginView.html" pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/WebstormProjects/five-card-draw/app/components/views/loginView.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-2.0588236">
-              <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="aboutView.html" pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/WebstormProjects/five-card-draw/app/components/views/aboutView.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-1.25">
-              <caret line="2" column="112" selection-start-line="2" selection-start-column="112" selection-end-line="2" selection-end-column="112" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="homeView.html" pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/WebstormProjects/five-card-draw/app/components/views/homeView.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-1.25">
-              <caret line="2" column="81" selection-start-line="2" selection-start-column="81" selection-end-line="2" selection-end-column="81" />
+              <caret line="4" column="41" selection-start-line="4" selection-start-column="41" selection-end-line="4" selection-end-column="41" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="HomeController.js" pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/WebstormProjects/five-card-draw/app/components/js/controllers/HomeController.js">
+        <entry file="file://$PROJECT_DIR$/app/components/js/controllers/HomeController.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="11" column="41" selection-start-line="11" selection-start-column="41" selection-end-line="11" selection-end-column="41" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Dealer.js" pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/WebstormProjects/five-card-draw/app/components/js/services/Dealer.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="13" column="31" selection-start-line="13" selection-start-column="31" selection-end-line="13" selection-end-column="31" />
+            <state vertical-scroll-proportion="-5.5555553">
+              <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="card.js" pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/WebstormProjects/five-card-draw/app/components/js/directives/card.js">
+        <entry file="file://$PROJECT_DIR$/app/components/js/directives/card.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="24" column="69" selection-start-line="24" selection-start-column="69" selection-end-line="24" selection-end-column="69" />
+            <state vertical-scroll-proportion="-0.0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="WinnerPicker.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/components/js/services/WinnerPicker.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-4.6363635">
+              <caret line="17" column="5" selection-start-line="0" selection-start-column="0" selection-end-line="17" selection-end-column="5" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="HandAnalyzer.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/components/js/services/HandAnalyzer.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.2824074">
+              <caret line="16" column="54" selection-start-line="16" selection-start-column="54" selection-end-line="16" selection-end-column="54" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="Deck.js" pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/WebstormProjects/five-card-draw/app/components/js/services/Deck.js">
+        <entry file="file://$PROJECT_DIR$/app/components/js/services/Deck.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-8.333333">
-              <caret line="15" column="27" selection-start-line="15" selection-start-column="27" selection-end-line="15" selection-end-column="27" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="package.json" pinned="false" current-in-tab="true">
-        <entry file="file://$USER_HOME$/WebstormProjects/five-card-draw/package.json">
+      <file leaf-file-name="Player.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/components/js/services/Player.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.035714287">
-              <caret line="5" column="67" selection-start-line="5" selection-start-column="67" selection-end-line="5" selection-end-column="67" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Card.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/components/js/services/Card.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-7.7777777">
+              <caret line="15" column="14" selection-start-line="15" selection-start-column="14" selection-end-line="15" selection-end-column="14" />
               <folding />
             </state>
           </provider>
@@ -167,42 +147,49 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$USER_HOME$/WebstormProjects/angular-starter" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$USER_HOME$/WebstormProjects/angular-starter/app/components/js/controllers/LoginController.js" />
-        <option value="$USER_HOME$/WebstormProjects/angular-starter/app/components/js/controllers/AboutController.js" />
-        <option value="$USER_HOME$/WebstormProjects/angular-starter/bower.json" />
-        <option value="$USER_HOME$/WebstormProjects/angular-starter/karma.conf.js" />
-        <option value="$USER_HOME$/WebstormProjects/angular-starter/app/components/views/cardsView.html" />
-        <option value="$USER_HOME$/WebstormProjects/angular-starter/app/components/js/services/WinnerPicker.js" />
-        <option value="$USER_HOME$/WebstormProjects/angular-starter/app/components/js/services/Deck.js" />
-        <option value="$USER_HOME$/WebstormProjects/angular-starter/app/components/js/services/Dealer.js" />
-        <option value="$USER_HOME$/WebstormProjects/angular-starter/app/components/styles/style.sass" />
-        <option value="$USER_HOME$/WebstormProjects/angular-starter/app/components/style/style.scss" />
-        <option value="$USER_HOME$/WebstormProjects/angular-starter/app/components/js/services/Card.js" />
-        <option value="$USER_HOME$/WebstormProjects/angular-starter/app/components/js/controllers/HomeController.js" />
-        <option value="$USER_HOME$/WebstormProjects/angular-starter/app/app.js" />
-        <option value="$USER_HOME$/WebstormProjects/angular-starter/app/index.html" />
-        <option value="$USER_HOME$/WebstormProjects/angular-starter/app/resources/css/app.css" />
-        <option value="$USER_HOME$/WebstormProjects/angular-starter/app/components/js/config.js" />
-        <option value="$USER_HOME$/WebstormProjects/angular-starter/app/components/views/homeView.html" />
-        <option value="$USER_HOME$/WebstormProjects/angular-starter/app/components/js/services/Player.js" />
-        <option value="$USER_HOME$/WebstormProjects/angular-starter/app/components/styles/main.css" />
-        <option value="$USER_HOME$/WebstormProjects/angular-starter/app/components/js/directives/card.js" />
-        <option value="$USER_HOME$/WebstormProjects/five-card-draw/app/components/js/controllers/AboutController.js" />
-        <option value="$USER_HOME$/WebstormProjects/five-card-draw/app/components/js/controllers/LoginController.js" />
-        <option value="$USER_HOME$/WebstormProjects/five-card-draw/app/components/js/services/Player.js" />
-        <option value="$USER_HOME$/WebstormProjects/five-card-draw/app/components/js/controllers/HomeController.js" />
-        <option value="$USER_HOME$/WebstormProjects/five-card-draw/app/components/js/services/Dealer.js" />
-        <option value="$USER_HOME$/WebstormProjects/five-card-draw/app/components/js/directives/card.js" />
-        <option value="$USER_HOME$/WebstormProjects/five-card-draw/app/components/views/homeView.html" />
-        <option value="$USER_HOME$/WebstormProjects/five-card-draw/app/components/views/aboutView.html" />
-        <option value="$USER_HOME$/WebstormProjects/five-card-draw/app/components/views/loginView.html" />
-        <option value="$USER_HOME$/WebstormProjects/five-card-draw/app/components/js/services/Deck.js" />
-        <option value="$USER_HOME$/WebstormProjects/five-card-draw/package.json" />
+        <option value="$PROJECT_DIR$/../angular-starter/app/components/js/controllers/LoginController.js" />
+        <option value="$PROJECT_DIR$/../angular-starter/app/components/js/controllers/AboutController.js" />
+        <option value="$PROJECT_DIR$/../angular-starter/bower.json" />
+        <option value="$PROJECT_DIR$/../angular-starter/karma.conf.js" />
+        <option value="$PROJECT_DIR$/../angular-starter/app/components/views/cardsView.html" />
+        <option value="$PROJECT_DIR$/../angular-starter/app/components/js/services/WinnerPicker.js" />
+        <option value="$PROJECT_DIR$/../angular-starter/app/components/js/services/Deck.js" />
+        <option value="$PROJECT_DIR$/../angular-starter/app/components/js/services/Dealer.js" />
+        <option value="$PROJECT_DIR$/../angular-starter/app/components/styles/style.sass" />
+        <option value="$PROJECT_DIR$/../angular-starter/app/components/style/style.scss" />
+        <option value="$PROJECT_DIR$/../angular-starter/app/components/js/services/Card.js" />
+        <option value="$PROJECT_DIR$/../angular-starter/app/components/js/controllers/HomeController.js" />
+        <option value="$PROJECT_DIR$/../angular-starter/app/app.js" />
+        <option value="$PROJECT_DIR$/../angular-starter/app/index.html" />
+        <option value="$PROJECT_DIR$/../angular-starter/app/resources/css/app.css" />
+        <option value="$PROJECT_DIR$/../angular-starter/app/components/js/config.js" />
+        <option value="$PROJECT_DIR$/../angular-starter/app/components/views/homeView.html" />
+        <option value="$PROJECT_DIR$/../angular-starter/app/components/js/services/Player.js" />
+        <option value="$PROJECT_DIR$/../angular-starter/app/components/styles/main.css" />
+        <option value="$PROJECT_DIR$/../angular-starter/app/components/js/directives/card.js" />
+        <option value="$PROJECT_DIR$/app/components/views/homeView.html" />
+        <option value="$PROJECT_DIR$/app/components/views/aboutView.html" />
+        <option value="$PROJECT_DIR$/app/components/views/loginView.html" />
+        <option value="$PROJECT_DIR$/package.json" />
+        <option value="$PROJECT_DIR$/app/components/views/cardsView.html" />
+        <option value="$PROJECT_DIR$/tests/HomeController_test.js" />
+        <option value="$PROJECT_DIR$/app/components/js/controllers/AboutController.js" />
+        <option value="$PROJECT_DIR$/app/components/js/controllers/HomeController.js" />
+        <option value="$PROJECT_DIR$/app/app.js" />
+        <option value="$PROJECT_DIR$/app/components/js/config.js" />
+        <option value="$PROJECT_DIR$/app/components/js/services/WinnerPicker.js" />
+        <option value="$PROJECT_DIR$/app/components/js/services/Player.js" />
+        <option value="$PROJECT_DIR$/app/components/js/services/Deck.js" />
+        <option value="$PROJECT_DIR$/app/components/js/services/Dealer.js" />
+        <option value="$PROJECT_DIR$/app/components/js/directives/card.js" />
+        <option value="$PROJECT_DIR$/app/components/js/controllers/LoginController.js" />
+        <option value="$PROJECT_DIR$/app/components/js/services/Card.js" />
+        <option value="$PROJECT_DIR$/app/components/js/services/HandAnalyzer.js" />
       </list>
     </option>
   </component>
@@ -243,8 +230,15 @@
     </navigator>
     <panes>
       <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="five-card-draw" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
           <PATH>
             <PATH_ELEMENT>
               <option name="myItemId" value="five-card-draw" />
@@ -298,28 +292,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="five-card-draw" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="five-card-draw" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="components" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -443,18 +415,17 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$USER_HOME$/WebstormProjects/angular-starter" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../angular-starter" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="HbShouldOpenHtmlAsHb" value="" />
     <property name="DefaultHtmlFileTemplate" value="Html5" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="$USER_HOME$/WebstormProjects/angular-starter/app/components/js" />
+      <recent name="$PROJECT_DIR$/../angular-starter/app/components/js" />
     </key>
   </component>
   <component name="RunManager">
@@ -488,6 +459,12 @@
       <method />
     </configuration>
     <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <pass-parent-envs>true</pass-parent-envs>
+      <envs />
       <method />
     </configuration>
   </component>
@@ -508,20 +485,20 @@
     <frame x="8" y="23" width="1400" height="772" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32859176" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32859176" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -543,151 +520,7 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$USER_HOME$/WebstormProjects/five-card-draw/tests/AboutController_test.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/WebstormProjects/five-card-draw/tests/HomeController_test.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="18" column="8" selection-start-line="18" selection-start-column="8" selection-end-line="18" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/WebstormProjects/five-card-draw/.bowerrc">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/WebstormProjects/five-card-draw/bower.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-6.875">
-          <caret line="11" column="1" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/WebstormProjects/five-card-draw/karma.conf.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="11" column="23" selection-start-line="11" selection-start-column="23" selection-end-line="11" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/WebstormProjects/five-card-draw/app/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="5" column="105" selection-start-line="5" selection-start-column="105" selection-end-line="5" selection-end-column="105" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/WebstormProjects/five-card-draw/app/resources/css/app.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="37" column="17" selection-start-line="37" selection-start-column="17" selection-end-line="37" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/WebstormProjects/five-card-draw/app/components/js/services/WinnerPicker.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="7" column="40" selection-start-line="7" selection-start-column="40" selection-end-line="7" selection-end-column="40" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/WebstormProjects/five-card-draw/app/components/js/config.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="9" column="53" selection-start-line="9" selection-start-column="53" selection-end-line="9" selection-end-column="53" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/WebstormProjects/five-card-draw/app/components/js/services/Card.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="25" column="37" selection-start-line="25" selection-start-column="37" selection-end-line="25" selection-end-column="37" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/WebstormProjects/five-card-draw/app/components/styles/main.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="21" column="30" selection-start-line="21" selection-start-column="30" selection-end-line="21" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/WebstormProjects/five-card-draw/app/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-12.25">
-          <caret line="47" column="47" selection-start-line="47" selection-start-column="47" selection-end-line="47" selection-end-column="47" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/WebstormProjects/five-card-draw/app/components/views/cardsView.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.25">
-          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/WebstormProjects/five-card-draw/app/components/js/services/Player.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="28" column="0" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/WebstormProjects/five-card-draw/app/components/js/services/Dealer.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="13" column="31" selection-start-line="13" selection-start-column="31" selection-end-line="13" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/WebstormProjects/five-card-draw/app/components/js/directives/card.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="24" column="69" selection-start-line="24" selection-start-column="69" selection-end-line="24" selection-end-column="69" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/WebstormProjects/five-card-draw/app/components/js/controllers/HomeController.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="11" column="41" selection-start-line="11" selection-start-column="41" selection-end-line="11" selection-end-column="41" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/WebstormProjects/five-card-draw/app/components/views/homeView.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.25">
-          <caret line="2" column="81" selection-start-line="2" selection-start-column="81" selection-end-line="2" selection-end-column="81" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/WebstormProjects/five-card-draw/app/components/js/controllers/AboutController.js">
+    <entry file="file://$PROJECT_DIR$/app/components/js/controllers/AboutController.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="17" column="6" selection-start-line="17" selection-start-column="6" selection-end-line="17" selection-end-column="6" />
@@ -695,15 +528,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/WebstormProjects/five-card-draw/app/components/views/aboutView.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.25">
-          <caret line="2" column="112" selection-start-line="2" selection-start-column="112" selection-end-line="2" selection-end-column="112" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/WebstormProjects/five-card-draw/app/components/js/controllers/LoginController.js">
+    <entry file="file://$PROJECT_DIR$/app/components/js/controllers/LoginController.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="48" column="10" selection-start-line="48" selection-start-column="10" selection-end-line="48" selection-end-column="10" />
@@ -711,26 +536,261 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/WebstormProjects/five-card-draw/app/components/views/loginView.html">
+    <entry file="file://$PROJECT_DIR$/app/components/views/loginView.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.0588236">
+        <state vertical-scroll-proportion="0.0">
           <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/WebstormProjects/five-card-draw/app/components/js/services/Deck.js">
+    <entry file="file://$PROJECT_DIR$/tests/AboutController_test.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-8.333333">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/HomeController_test.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/components/views/aboutView.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="2" column="112" selection-start-line="2" selection-start-column="112" selection-end-line="2" selection-end-column="112" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/components/views/homeView.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="2" column="81" selection-start-line="2" selection-start-column="81" selection-end-line="2" selection-end-column="81" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/components/js/services/Deck.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
           <caret line="15" column="27" selection-start-line="15" selection-start-column="27" selection-end-line="15" selection-end-column="27" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/WebstormProjects/five-card-draw/package.json">
+    <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.035714287">
+        <state vertical-scroll-proportion="0.0">
           <caret line="5" column="67" selection-start-line="5" selection-start-column="67" selection-end-line="5" selection-end-column="67" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/components/views/cardsView.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="1" column="13" selection-start-line="1" selection-start-column="13" selection-end-line="1" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.bowerrc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bower.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-6.875">
+          <caret line="11" column="1" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/karma.conf.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="11" column="23" selection-start-line="11" selection-start-column="23" selection-end-line="11" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/resources/css/app.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="37" column="17" selection-start-line="37" selection-start-column="17" selection-end-line="37" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/components/styles/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="21" column="30" selection-start-line="21" selection-start-column="30" selection-end-line="21" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-12.25">
+          <caret line="47" column="47" selection-start-line="47" selection-start-column="47" selection-end-line="47" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/components/views/aboutView.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="2" column="112" selection-start-line="2" selection-start-column="112" selection-end-line="2" selection-end-column="112" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="5" column="67" selection-start-line="5" selection-start-column="67" selection-end-line="5" selection-end-column="67" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/components/views/cardsView.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="1" column="13" selection-start-line="1" selection-start-column="13" selection-end-line="1" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/components/views/homeView.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="2" column="81" selection-start-line="2" selection-start-column="81" selection-end-line="2" selection-end-column="81" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/components/views/loginView.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/AboutController_test.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/HomeController_test.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-12.222222">
+          <caret line="22" column="39" selection-start-line="22" selection-start-column="39" selection-end-line="22" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/components/js/config.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/components/js/services/Dealer.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/components/js/controllers/AboutController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="11" column="5" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/components/js/controllers/HomeController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-5.5555553">
+          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/components/js/controllers/LoginController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="4" column="41" selection-start-line="4" selection-start-column="41" selection-end-line="4" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/components/js/services/WinnerPicker.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-4.6363635">
+          <caret line="17" column="5" selection-start-line="0" selection-start-column="0" selection-end-line="17" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/components/js/directives/card.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/components/js/services/Deck.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/components/js/services/Player.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/components/js/services/Card.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-7.7777777">
+          <caret line="15" column="14" selection-start-line="15" selection-start-column="14" selection-end-line="15" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/components/js/services/HandAnalyzer.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.2824074">
+          <caret line="16" column="54" selection-start-line="16" selection-start-column="54" selection-end-line="16" selection-end-column="54" />
           <folding />
         </state>
       </provider>
