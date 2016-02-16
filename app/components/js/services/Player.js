@@ -7,12 +7,13 @@
 
 
     function Player() {
-        return function(deck){
+        return function(deck, ha){
             var toRemove; //this will just be the indexes of cards selected to replace
             var round = 0; // 0 is before getting dealt; 1 is after dealt; 2 is after discarded
             var score = 0; // only goes up with a win
             var canDiscard = true;
             var turn = 0; // when 0, player goes first to remove cards
+            this.cards = [];
 
             //this.getRound = function() {
             //    return round;
@@ -33,6 +34,7 @@
                     that.cards[i] = cardsDealt.pop();
                 });
                 toRemove = [];
+                console.log(ha.evaluateHand(this.cards));
 
             };
 
@@ -45,6 +47,10 @@
                         toRemove.push(i); // select card for removal
                     }
                 }
+            };
+
+            this.showHand = function(){
+                //
             };
 
             function updateRound() {

@@ -5,7 +5,7 @@
 	<div ng-repeat="card in player1.cards" class="card-container">
 		<card card="card" player="player1" i="$index"></card>
 	</div>
-	<button ng-click="player1.getCards()" ng-hide="player1.canDiscard()">Swap Cards</button>
+	<button ng-click="player1.getCards()" ng-hide="showButton">Swap Cards</button>
 	<!--Dealer-->
 	<div ng-repeat="card in dealer.cards" class="card-container">
 		<card card="card" player="dealer" i="$index"></card>
