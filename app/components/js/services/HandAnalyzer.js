@@ -15,9 +15,6 @@
         // 2)
 
 
-
-
-
         o.evaluateHand = function(hand){
             console.log('hand to evaluate: ', hand);
             var toHighlight; // so we display the best cards the player can use
@@ -30,38 +27,16 @@
             var bestHand;
             // first check if any matches to rule out straights and flushes
             if (! o.matchFound(hand)) { // straights and flushes are only possible when no paired cards
-                flush = o.flushDetector(hand);
-                straight = o.straightDetector(hand);
-                if (flush && straight) {
-                    topRankedHand = 8;
-                    // TODO: Here we need to fix for when ace is the low card
-                    bestHand = Messages.hands.straightFlush(getHighCard(hand, undefined, true)[0]);
-                    toHighlight = all;
-                } else if (!flush && !straight) { //if no flush or straight we need a high card
-                    var highC = getHighCard(hand, undefined, true);
-                    bestHand = highC[0].getCardName(true);
-                    toHighlight = highC[1];
-                } else if (flush) {
-                    topRankedHand = 5;
-                    toHighlight = all;
-                    bestHand = Messages.hands.flush(getHighCard(hand,undefined,true)[0]);
-                } else { // straight
-                    topRankedHand = 4;
-                    toHighlight = all;
-                    bestHand = Messages.hands.straight(getHighCard(hand));
-                }
+                var d = analyzeNoMatches(hand); //Int,Str,[Int]
+                topRankedHand = d.shift(); // remove head of list and assign
+                bestHand = d.shift();
+                toHighlight = d.shift();
             } else { //because you cannot pair a card with a flush or straight
                 var indexesReturned = howManyMatchesOfWhat(hand); // gets array filled with 1-2 arrays of indexes
                 if (indexesReturned.length === 1) { // IF no pair OR 2-3 of a kind
                     var firstSubArray = indexesReturned[0];
                     var matchCount = firstSubArray.length;
                     switch(matchCount){
-                        //case 0:
-                        //    // shouldn't happen as covered in above case
-                        //    var arr = getHighCard(hand, undefined, true);
-                        //    bestHand = arr[0];
-                        //    toHighlight = arr[1];
-                        //    break;
                         case 2:
                             // get card name
                             topRankedHand = 1;
@@ -108,6 +83,40 @@
 
 
         };
+
+        function highlightAll(){
+            return [0,1,2,3,4];
+        }
+        // returns [Int, Str, [Int]]
+        function analyzeNoMatches(hand){
+            var flush = o.flushDetector(hand);
+            var straight = o.straightDetector(hand);
+            var tRankedHand;
+            var bHand;
+            var tHighlight;
+
+            if (flush && straight) {
+                tRankedHand = 8;
+                // TODO: Here we need to fix for when ace is the low card
+                bHand = Messages.hands.straightFlush(getHighCard(hand, undefined, true)[0]);
+                tHighlight = highlightAll();
+            } else if (!flush && !straight) { //if no flush or straight we need a high card
+                var highC = getHighCard(hand, undefined, true);
+                bHand = highC[0].getCardName(true);
+                tHighlight = highC[1];
+            } else if (flush) {
+                tRankedHand = 5;
+                tHighlight = all;
+                bHand = Messages.hands.flush(getHighCard(hand,undefined,true)[0]);
+            } else { // straight
+                tRankedHand = 4;
+                tHighlight = highlightAll();
+                bHand = Messages.hands.straight(getHighCard(hand));
+            }
+            // return [top ranked hand: Int, best Hand: Str, to highlight: Array[Int]]
+            return [tRankedHand, bHand, tHighlight];
+        }
+
         // converts ace to -1 instead of 12 for low straights if 2nd optional parameter is true
         function maybeAceToLow(value, doIt) {
             if (doIt && value === 12) {
@@ -129,7 +138,7 @@
         // ---(if two arrays (then matches at those indexes and user has either two pair or full house)
         // prevMatched is an array of indexes where it previously matched
         function howManyMatchesOfWhat(hand, prevMatched, indexes) {
-            console.log('*****BEGINNNNN*****');
+            console.log('*****BEGIN*****');
             var matchingOn = prevMatched;
             var container = []; // holds matches array(s)
             var matches;
@@ -169,34 +178,18 @@
 
 
 
-
-            console.log('hiiiiiiii');
-            console.log('prevMatched: ', prevMatched);
-            console.log('matachingOn: ', matchingOn);
-
-
-
             if (matchingOn !== undefined && prevMatched === undefined) { // if a mach found && first run through
-                console.log('ayeee');
-                console.log('before anyMore function: ', matches);
-                //matches = anyMore(matchingOn, vals, matches);
-
                 // call loop again to look for any other pairs
-                console.log("BEFORE CALL SELF: ", matches);
                 return howManyMatchesOfWhat(hand, matchingOn, matches);
-                
             // if another match found and second run through
             } else if (matchingOn !== undefined && prevMatched !== undefined && matchingOn !== prevMatched) {
-                console.log('*****2*****');
                 container.push(indexes);
                 container.push(matches);
                 return container;
             } else if (prevMatched !== undefined) { // if no other match found on second run through
-                console.log('*****3*****');
                 container.push(indexes);
                 return container;
             } else {
-                console.log('*****4*****');
                 container.push(matches);
                 return container;
             }
