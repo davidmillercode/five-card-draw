@@ -24,3 +24,6 @@ span{ display: block; }
 div.black-suit {
     color: black;
 }
+.highlighted {
+    background: palegoldenrod;
+}

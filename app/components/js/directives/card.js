@@ -27,6 +27,7 @@
                 }
                 // player can only discard their own cards
                 if (! scope.player.dealer) {
+                    // bind click event where they select what they would like to discard
                     ele.bind('click', function(){
                         // darkens card to discard if unselected / removes darken if selected
                         // also adds or removes from pending discard pile
@@ -38,6 +39,15 @@
                             scope.player.selectCardToRemove(scope.i);
                         }
                     });
+                    // highlight cards that make best hand after each round
+                    scope.$watch('player.toHighlight', function(){
+                        if (scope.player.toHighlight.indexOf(scope.i) !== -1) {
+                            ele.addClass('highlighted');
+                        } else {
+                            ele.removeClass('highlighted');
+                        }
+                    });
+
                 }
             }
         };

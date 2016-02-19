@@ -12,7 +12,6 @@
             this.getCards = function(numCards, indexes) {
 
             };
-            this.wtf = 'winner what???';
         }
     }
 })();

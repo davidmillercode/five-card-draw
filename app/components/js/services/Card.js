@@ -10,9 +10,6 @@
         return function(suit, card){
             var s = suit; //0: clubs, 1: diamonds, 2: hearts, 3:spades
             var c = card; // add 2 to get card, 9: jack, 10: queen, 11: king, 12: Ace
-            // TODO: Delete below
-            this.nammmmme = card;
-            this.suiiiittt = suit;
 
             this.getCardValue = function(){
                 return c;

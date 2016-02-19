@@ -14,6 +14,7 @@
             var canDiscard = true;
             var turn = 0; // when 0, player goes first to remove cards
             this.cards = [];
+            this.toHighlight = []; // cards that will be highlighted
 
             //this.getRound = function() {
             //    return round;
@@ -34,8 +35,8 @@
                     that.cards[i] = cardsDealt.pop();
                 });
                 toRemove = [];
-                console.log(ha.evaluateHand(this.cards));
-
+                var dataReturned = ha.evaluateHand(this.cards);
+                this.toHighlight = dataReturned[1];
             };
 
             this.selectCardToRemove = function(i){
@@ -63,6 +64,7 @@
 
             this.startGame = function(){
                 toRemove = [];
+                this.toHighlight = [];
                 this.cards = deck.dealCards(5);
                 canDiscard = true;
                 round = 1;

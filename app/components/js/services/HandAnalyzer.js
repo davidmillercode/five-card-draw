@@ -11,85 +11,41 @@
         var handsValueChart = [' High Straight Flush', 'Four of a Kind', 'Fullhouse', ' High Flush', ' High Straight',
             'Three of a Kind', 'Two Pair', 'One Pair', ' High'];
 
-        // 1) if there is a 2/3/4-pair then there cannot be a flush or a straight
-        // 2)
 
 
         o.evaluateHand = function(hand){
             console.log('hand to evaluate: ', hand);
             var toHighlight; // so we display the best cards the player can use
             var all = [0,1,2,3,4];
-            var flush;
-            var straight;
             // higher is better -- 0: high card, 1: pair, 2: two pair, 3: three of a kind, 4: straight, 5: flush,
             // 6: fullhouse, 7: four of a kind, 8: straight flush
             var topRankedHand = 0;
             var bestHand;
             // first check if any matches to rule out straights and flushes
+            // TODO: Should I simplify this to make it just a function
             if (! o.matchFound(hand)) { // straights and flushes are only possible when no paired cards
                 var d = analyzeNoMatches(hand); //Int,Str,[Int]
                 topRankedHand = d.shift(); // remove head of list and assign
                 bestHand = d.shift();
                 toHighlight = d.shift();
             } else { //because you cannot pair a card with a flush or straight
-                var indexesReturned = howManyMatchesOfWhat(hand); // gets array filled with 1-2 arrays of indexes
-                if (indexesReturned.length === 1) { // IF no pair OR 2-3 of a kind
-                    var firstSubArray = indexesReturned[0];
-                    var matchCount = firstSubArray.length;
-                    switch(matchCount){
-                        case 2:
-                            // get card name
-                            topRankedHand = 1;
-                            bestHand = 'Two ' + hand[firstSubArray[0]].getCardName(true) + 's';
-                            toHighlight = firstSubArray;
-                            break;
-                        case 3:
-                            topRankedHand = 3;
-                            bestHand = 'Three' + hand[firstSubArray[0]].getCardName(true) + 's';
-                            toHighlight = firstSubArray;
-                            break;
-                        case 4:
-                            topRankedHand = 7;
-                            bestHand = 'Four' + hand[firstSubArray[0]].getCardName(true) + 's';
-                            toHighlight = firstSubArray;
-                        default:
-                            console.log('ERROR AT HAND ANALYSIS.  SHOULD BE EMPTY OR 2-3 LENGTH: ', firstSubArray);
-                    }
-                } else { // two pair or fullhouse
-                    console.log("THESE ARE INDEXES RETURNED: ", indexesReturned);
-                    var firstSubArray = indexesReturned[0];
-                    var secondSubArray = indexesReturned[1];
-                    toHighlight = firstSubArray.concat(secondSubArray);
-                    var firstCardName = hand[firstSubArray[0]].getCardName(true);
-                    var secondCardName = hand[secondSubArray[0]].getCardName(true);
-                    var matchCount = firstSubArray.length + secondSubArray.length;
-
-                    if (matchCount === 5) { // full house
-                        topRankedHand = 6;
-                        bestHand = (firstSubArray.length > secondSubArray.length) ?
-                            Messages.hands.fullHouse(firstCardName, secondCardName) :
-                            Messages.hands.fullHouse(secondCardName, firstCardName);
-
-                    } else { // two pair
-                        topRankedHand = 2;
-                        bestHand = Messages.hands.twoPair(firstCardName, secondCardName);
-                    }
-                }
+                var matchedData = analyzeSomeMatches(hand);
+                topRankedHand = matchedData.shift(); // remove head of list and assign
+                bestHand = matchedData.shift();
+                toHighlight = matchedData.shift();
             }
-
-
             // ending of function
             return [bestHand, toHighlight, topRankedHand]; // [ '', [1,2,5], 4 ]
-
-
         };
 
         function highlightAll(){
             return [0,1,2,3,4];
         }
+
+        // runs when user has no paired cards
         // returns [Int, Str, [Int]]
         function analyzeNoMatches(hand){
-            var flush = o.flushDetector(hand);
+            var flush = o.flushDetector(hand); // true/false
             var straight = o.straightDetector(hand);
             var tRankedHand;
             var bHand;
@@ -117,6 +73,64 @@
             return [tRankedHand, bHand, tHighlight];
         }
 
+        // runs when user has some paired cards
+        // returns [Int, Str, [Int]]
+        function analyzeSomeMatches(hand){
+            var tRankedHand;
+            var bHand;
+            var tHighlight;
+            var firstSubArray;
+            var matchCount;
+            var indexesReturned = howManyMatchesOfWhat(hand); // Array of Array[Int] -> if 1 array (0-1 pairing) -> 2 array (2 pairings)
+
+            if (indexesReturned.length === 1) { // IF no pair OR 2-3 of a kind
+                firstSubArray = indexesReturned[0];
+                matchCount = firstSubArray.length;
+                switch(matchCount){
+                    case 2:
+                        // get card name
+                        tRankedHand = 1;
+                        bHand = 'Two ' + hand[firstSubArray[0]].getCardName(true) + 's';
+                        tHighlight = firstSubArray;
+                        break;
+                    case 3:
+                        tRankedHand = 3;
+                        bHand = 'Three' + hand[firstSubArray[0]].getCardName(true) + 's';
+                        tHighlight = firstSubArray;
+                        break;
+                    case 4:
+                        tRankedHand = 7;
+                        bHand = 'Four' + hand[firstSubArray[0]].getCardName(true) + 's';
+                        tHighlight = firstSubArray;
+                        break;
+                    default:
+                        console.log('ERROR AT HAND ANALYSIS.  SHOULD BE EMPTY OR 2-3 LENGTH: ', firstSubArray);
+                }
+            } else { // two pair or fullhouse
+                console.log("THESE ARE INDEXES RETURNED: ", indexesReturned);
+                firstSubArray = indexesReturned[0];
+                var secondSubArray = indexesReturned[1];
+                tHighlight = firstSubArray.concat(secondSubArray);
+                var firstCardName = hand[firstSubArray[0]].getCardName(true);
+                var secondCardName = hand[secondSubArray[0]].getCardName(true);
+                matchCount = firstSubArray.length + secondSubArray.length;
+
+                if (matchCount === 5) { // full house
+                    tRankedHand = 6;
+                    bHand = (firstSubArray.length > secondSubArray.length) ?
+                        Messages.hands.fullHouse(firstCardName, secondCardName) :
+                        Messages.hands.fullHouse(secondCardName, firstCardName);
+
+                } else { // two pair
+                    tRankedHand = 2;
+                    bHand = Messages.hands.twoPair(firstCardName, secondCardName);
+                }
+            }
+
+            return [tRankedHand, bHand, tHighlight];
+        }
+
+
         // converts ace to -1 instead of 12 for low straights if 2nd optional parameter is true
         function maybeAceToLow(value, doIt) {
             if (doIt && value === 12) {
@@ -126,19 +140,13 @@
             }
         }
 
-        // generates string that says full hou
-        function fullHouseStringGen(){
 
-        }
-
-
-        // takes hand and returns an array with one or two subarrays of indexes
+        // takes hand and returns an array with one (0-1 pairing )or two subarrays of indexes (2 pairings)
         // ---(if one array and empty no match)
         // ---(if one array and full then matches at those indexes and user has either a pair or three of a kind)
         // ---(if two arrays (then matches at those indexes and user has either two pair or full house)
         // prevMatched is an array of indexes where it previously matched
         function howManyMatchesOfWhat(hand, prevMatched, indexes) {
-            console.log('*****BEGIN*****');
             var matchingOn = prevMatched;
             var container = []; // holds matches array(s)
             var matches;
@@ -163,6 +171,7 @@
                     return true;
                 }
             });
+
             if (matchingOn !== prevMatched) {
                 var mappedValsToIndexes = vals.map(function(val, i){
                     if (val === matchingOn) {
@@ -193,18 +202,6 @@
                 container.push(matches);
                 return container;
             }
-
-            //// looks if there are anymore of x in the array - returns matches if nothing found / matches.push(index) if found
-            //function anyMore(x, arr, matches){
-            //    var indexFound = arr.indexOf(x);
-            //    if (indexFound !== -1) { // if find another return index; else return -1
-            //        matches.push(indexFound);
-            //        arr.splice(indexFound, 1);
-            //        return anyMore(x, arr, matches);
-            //    } else {
-            //        return matches;
-            //    }
-            //}
         }
 
 
